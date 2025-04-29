@@ -22,7 +22,7 @@ def ideal_solutions(weighted_matrix, criteria_types):
     ideal = []
     negative_ideal = []
     for j, ctype in enumerate(criteria_types):
-        if ctype == 'benefit':
+        if ctype == 'Maximize':
             ideal.append(weighted_matrix[:, j].max())
             negative_ideal.append(weighted_matrix[:, j].min())
         else:
